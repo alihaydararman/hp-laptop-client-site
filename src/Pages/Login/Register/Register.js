@@ -75,7 +75,7 @@ const Register = () => {
                     {authError && <Alert severity="error">{authError}</Alert>}
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <img style={{ width: '100%' }} alt="" />
+                    <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2021/03/one-click-gmail-login-for-wordpress-featured-image.jpg" style={{ width: '100%' }} alt="" />
                 </Grid>
             </Grid>
         </Container>

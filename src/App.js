@@ -14,6 +14,9 @@ import OrderProduct from './Pages/Details/OrderProduct/OrderProduct';
 import UpdateData from './Pages/Dashboard/UpdateData/UpdateData';
 import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/Login/Login/PrivateRoute/PrivateRoute';
+import AboutUs from './Pages/Aboutus/Aboutus';
+import NotFound from './Pages/NotFound/NotFound';
+import Contact from './Pages/Contact/Contact';
 // import Addservice from './Pages/Dashboard/Addservice/Addservice';
 
 
@@ -25,11 +28,14 @@ function App() {
       <AuthProvider>
         <Router>
           <Switch>
-            <Route path='/orderproducts'>
-              <Productsorder />
+            <Route exact path='/'>
+              <Home />
             </Route>
             <Route path='/home'>
               <Home />
+            </Route>
+            <Route path='/orderproducts'>
+              <Productsorder />
             </Route>
             <Route path='/dashboard'>
               <Dashboard />
@@ -46,14 +52,21 @@ function App() {
             <Route path='/orderproduct'>
               <OrderProduct></OrderProduct>
             </Route>
+            <Route path='/aboutus'>
+              <AboutUs></AboutUs>
+            </Route>
+            <Route path='/contactus'>
+              <Contact></Contact>
+            </Route>
             <Route path='/products/updatedata/:serviceId'>
               <UpdateData></UpdateData>
             </Route>
             {/* <Route path='/addservice'>
             <Addservice />
           </Route> */}
-            <Route exact path='/'>
-              <Home />
+
+            <Route path='*'>
+              <NotFound />
             </Route>
           </Switch>
         </Router>

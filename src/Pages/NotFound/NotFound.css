@@ -1,0 +1,8 @@
+.hhh { background-image: url(https://media.istockphoto.com/vectors/no-result-not-found-or-404-web-page-error-illustration-vector-id846795366?k=20&m=846795366&s=170667a&w=0&h=zxv1xZyZCeVhL9q_05UuxP_8F-Dmt-4NxS3DEGhkn6I=);
+
+width: 100%;
+height: 500px;
+}
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
