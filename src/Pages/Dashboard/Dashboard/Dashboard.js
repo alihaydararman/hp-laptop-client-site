@@ -30,6 +30,7 @@ import Myorder from '../Myorder/Myorder';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import UserProfile from '../UserProfile/UserProfile';
 import Home from '../../Home/Home/Home';
+import MyAllOrder from '../MyAllOrder/MyAllOrder';
 // import useAuth from '../../../Hooks/useAuth';
 
 
@@ -56,7 +57,9 @@ function Dashboard(props) {
             <Link to="/orderproducts"><Button color="inherit">PRODUCTS ORDER</Button></Link>
             <Box><Link to={`${url}/makeadmin`}><Button color="inherit">Make Admin</Button></Link>
                 <Link to={`${url}/manageservices`}><Button color="inherit">Manage Product</Button></Link>
-                <Link to="/orderproducts"><Button color="inherit">My All Orders</Button></Link>
+                <Link to={`${url}/myorder`}><Button color="inherit">My all Order</Button></Link>
+                <Link to={`${url}/myallorder`}><Button color="inherit">My Order</Button></Link>
+
                 <Link to={`${url}/addproducts`}><Button color="inherit">Add Products</Button></Link>
                 {/* <Link to={`${url}/products/updatedata/:serviceId`}><Button color="inherit">Update Product</Button></Link> */}
             </Box>
@@ -157,6 +160,9 @@ function Dashboard(props) {
                     </Route>
                     <Route path={`${path}/makeadmin`}>
                         <MakeAdmin></MakeAdmin>
+                    </Route>
+                    <Route path={`${path}/myallorder`}>
+                        <MyAllOrder></MyAllOrder>
                     </Route>
                     <Route path={`${path}/home`}>
                         <Home></Home>

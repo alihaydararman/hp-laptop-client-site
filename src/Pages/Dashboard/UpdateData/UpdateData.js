@@ -12,7 +12,7 @@ const UpdateData = () => {
     const { serviceId } = useParams();
     const [service, setService] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/products/${serviceId}`;
+        const url = `https://sheltered-ravine-48644.herokuapp.com/products/${serviceId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setService(data));
@@ -52,7 +52,7 @@ const UpdateData = () => {
 
     const handleUpdateuser = e => {
 
-        const url = `http://localhost:5000/products/${serviceId}`;
+        const url = `https://sheltered-ravine-48644.herokuapp.com/products/${serviceId}`;
         fetch(url, {
             method: 'PUT',
             headers: {

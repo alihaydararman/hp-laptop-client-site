@@ -8,7 +8,7 @@ const Details = () => {
     const { serviceId } = useParams();
     const [details, setDetails] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${serviceId}`)
+        fetch(`https://sheltered-ravine-48644.herokuapp.com/products/${serviceId}`)
             .then(res => res.json())
             .then(data => setDetails(data));
     }, [serviceId])

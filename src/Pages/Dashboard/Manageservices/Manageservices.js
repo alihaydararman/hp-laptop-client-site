@@ -6,7 +6,7 @@ import './Manageservices.css'
 const Manageservices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://sheltered-ravine-48644.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])

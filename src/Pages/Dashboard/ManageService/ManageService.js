@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 const ManageService = ({ service, setServices, services }) => {
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/products/${id}`;
+        const url = `https://sheltered-ravine-48644.herokuapp.com/products/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

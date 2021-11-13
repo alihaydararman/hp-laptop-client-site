@@ -6,7 +6,7 @@ const Products = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
         // const url = 'https://warm-spire-28182.herokuapp.com/service';
-        const url = 'http://localhost:5000/products';
+        const url = 'https://sheltered-ravine-48644.herokuapp.com/products';
 
         fetch(url)
             .then(res => res.json())

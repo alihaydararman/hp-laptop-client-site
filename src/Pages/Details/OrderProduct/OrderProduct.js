@@ -10,7 +10,7 @@ const OrderProduct = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         reset(data)
-        axios.post('http://localhost:5000/orders', data)
+        axios.post('https://sheltered-ravine-48644.herokuapp.com/orders', data)
             .then(result => {
                 console.log(result.data);
                 reset('')
