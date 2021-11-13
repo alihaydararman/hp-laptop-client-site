@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "HP 15s-du3527TU",
+        "price": "65000",
+        "packege": "3 Years",
+        "description": "Intel Core i5-1135G7 Processor (8M Cache, 2.40 GHz up to 4.20 GHz)8GB DDR4 2666 (2 x 4GB) RAM1TB 5400RPM SATA HDD 15.6 FHD (1920 x 1080) IPS Display",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/hp-15s/hp-15s-4-500x500.jpg"
+    },
+    {
+        "id": 2,
+        "name": "HP 15s-du3527TU",
+        "price": "45000",
+        "packege": "2 Years",
+        "description": "Intel Core i5-1135G7 Processor (8M Cache, 2.40 GHz up to 4.20 GHz)8GB DDR4 2666 (2 x 4GB) RAM1TB 5400RPM SATA HDD 15.6 FHD (1920 x 1080) IPS Display",
+        "img": "https://5.imimg.com/data5/JV/UY/MY-11753646/hp-laptop-500x500.jpg"
+    },
+    {
+        "id": 3,
+        "name": "HP Laptop 15-dw3021nia",
+        "price": "55000",
+        "packege": "3 Years",
+        "description": "Intel Core i5-1135G7 Processor (8M Cache, 2.40 GHz up to 4.20 GHz)8GB DDR4 2666 (2 x 4GB) RAM1TB 5400RPM SATA HDD 15.6 FHD (1920 x 1080) IPS Display",
+        "img": "https://eit.com.bd/wp-content/uploads/2021/05/HP-Laptop-15-dw3021nia-Intel-Core-i5-1135G7.jpg"
+    },
+    {
+        "id": 4,
+        "name": "HP 15s-du3527TU",
+        "price": "45000",
+        "packege": "3 Years",
+        "description": "Intel Core i5-1135G7 Processor (8M Cache, 2.40 GHz up to 4.20 GHz)8GB DDR4 2666 (2 x 4GB) RAM1TB 5400RPM SATA HDD 15.6 FHD (1920 x 1080) IPS Display",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/hp-15s/hp-15s-4-500x500.jpg"
+    },
+    {
+        "id": 5,
+        "name": "HP 15s-du3527TU",
+        "price": "45000",
+        "packege": "3 Years",
+        "description": "Intel Core i5-1135G7 Processor (8M Cache, 2.40 GHz up to 4.20 GHz)8GB DDR4 2666 (2 x 4GB) RAM1TB 5400RPM SATA HDD 15.6 FHD (1920 x 1080) IPS Display",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/hp-15s/hp-15s-4-500x500.jpg"
+    },
+    {
+        "id": 6,
+        "name": "HP 15s-du3527TU",
+        "price": "45000",
+        "packege": "3 Years",
+        "description": "Intel Core i5-1135G7 Processor (8M Cache, 2.40 GHz up to 4.20 GHz)8GB DDR4 2666 (2 x 4GB) RAM1TB 5400RPM SATA HDD 15.6 FHD (1920 x 1080) IPS Display",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/hp-15s/hp-15s-4-500x500.jpg"
+    },
+    {
+        "id": 7,
+        "name": "HP 15s-du3527TU",
+        "price": "45000",
+        "packege": "3 Years",
+        "description": "Intel Core i5-1135G7 Processor (8M Cache, 2.40 GHz up to 4.20 GHz)8GB DDR4 2666 (2 x 4GB) RAM1TB 5400RPM SATA HDD 15.6 FHD (1920 x 1080) IPS Display",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/hp-15s/hp-15s-4-500x500.jpg"
+    },
+    {
+        "id": 8,
+        "name": "HP 15s-du3527TU",
+        "price": "45000",
+        "packege": "3 Years",
+        "description": "Intel Core i5-1135G7 Processor (8M Cache, 2.40 GHz up to 4.20 GHz)8GB DDR4 2666 (2 x 4GB) RAM1TB 5400RPM SATA HDD 15.6 FHD (1920 x 1080) IPS Display",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/hp-15s/hp-15s-4-500x500.jpg"
+    },
+    {
+        "id": 9,
+        "name": "HP 15s-du3527TU",
+        "price": "45000",
+        "packege": "3 Years",
+        "description": "Intel Core i5-1135G7 Processor (8M Cache, 2.40 GHz up to 4.20 GHz)8GB DDR4 2666 (2 x 4GB) RAM1TB 5400RPM SATA HDD 15.6 FHD (1920 x 1080) IPS Display",
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/hp-15s/hp-15s-4-500x500.jpg"
+    }
+]

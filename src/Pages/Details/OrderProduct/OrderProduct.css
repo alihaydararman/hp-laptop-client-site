@@ -1,0 +1,10 @@
+.orderservice form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderservice form input{
+    width: 40%;
+}
