@@ -38,7 +38,7 @@ const Nevigetions = () => {
 
                         {user?.email ? <Box>
                             <Link style={{ textDecoration: 'none', color: 'white' }} to='/contactus'><Button color="inherit">Contact Us</Button></Link>
-                            <Link style={{ textDecoration: 'none', color: 'white' }} to='/orderproducts'><Button color="inherit">Products Order</Button></Link>
+                            <Link style={{ textDecoration: 'none', color: 'white' }} to='/orderproducts'><Button color="inherit">All Products</Button></Link>
                             <NavLink style={{ textDecoration: 'none', color: 'white' }} to="/dashboard">
                                 <Button color="inherit">Dashboard</Button>
                             </NavLink>

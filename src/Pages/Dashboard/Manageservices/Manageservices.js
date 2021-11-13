@@ -12,7 +12,7 @@ const Manageservices = () => {
     }, [])
     return (
         <div>
-            <h1>Manage Services</h1>
+            <h1>Manage Product</h1>
             <div className='servicesm'>
                 {
                     services.map(service => <ManageService
