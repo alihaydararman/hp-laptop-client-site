@@ -31,6 +31,8 @@ import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import UserProfile from '../UserProfile/UserProfile';
 import Home from '../../Home/Home/Home';
 import MyAllOrder from '../MyAllOrder/MyAllOrder';
+import AdminRoute from '../../Login/AdminRoute/AdminRoute';
+import useAuth from '../../../Hooks/useAuth';
 // import useAuth from '../../../Hooks/useAuth';
 
 
@@ -43,7 +45,7 @@ function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
     let { path, url } = useRouteMatch();
-    // const { admin } = useAuth()
+    const { admin, user } = useAuth()
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
@@ -55,12 +57,20 @@ function Dashboard(props) {
             <Toolbar />
             <Divider />
             <Link to="/orderproducts"><Button color="inherit">PRODUCTS ORDER</Button></Link>
-            <Box><Link to={`${url}/makeadmin`}><Button color="inherit">Make Admin</Button></Link>
-                <Link to={`${url}/manageservices`}><Button color="inherit">Manage Product</Button></Link>
+            <Box>
+
+                {
+                    admin && user.email && <Box>
+                        <Link to={`${url}/makeadmin`}><Button color="inherit">Make Admin</Button></Link>
+                        <Link to={`${url}/manageservices`}><Button color="inherit">Manage Product</Button></Link>
+                        <Link to={`${url}/addproducts`}><Button color="inherit">Add Products</Button></Link>
+                    </Box>
+                }
+
                 <Link to={`${url}/myorder`}><Button color="inherit">My all Order</Button></Link>
                 <Link to={`${url}/myallorder`}><Button color="inherit">My Order</Button></Link>
 
-                <Link to={`${url}/addproducts`}><Button color="inherit">Add Products</Button></Link>
+
                 {/* <Link to={`${url}/products/updatedata/:serviceId`}><Button color="inherit">Update Product</Button></Link> */}
             </Box>
 
@@ -146,21 +156,21 @@ function Dashboard(props) {
             >
                 <Toolbar />
                 <Switch>
-                    <Route path={`${path}/manageservices`}>
+                    <AdminRoute path={`${path}/manageservices`}>
                         <Manageservices></Manageservices>
-                    </Route>
+                    </AdminRoute>
                     {/* <Route path={`${path}/products/updatedata/:serviceId`}>
                         <UpdateData></UpdateData>
                     </Route> */}
-                    <Route path={`${path}/addproducts`}>
+                    <AdminRoute path={`${path}/addproducts`}>
                         <Addservice></Addservice>
-                    </Route>
+                    </AdminRoute>
                     <Route path={`${path}/myorder`}>
                         <Myorder></Myorder>
                     </Route>
-                    <Route path={`${path}/makeadmin`}>
+                    <AdminRoute path={`${path}/makeadmin`}>
                         <MakeAdmin></MakeAdmin>
-                    </Route>
+                    </AdminRoute>
                     <Route path={`${path}/myallorder`}>
                         <MyAllOrder></MyAllOrder>
                     </Route>

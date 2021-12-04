@@ -11,7 +11,7 @@ const CommentDisplay = () => {
     }, [])
     return (
         <div className='container'>
-            <h1>Show Our All Customar Comment</h1>
+            <h1 style={{ textAlign: 'center', background: 'black', color: 'white' }}>Show Our All Customar Comment</h1>
             <div className='servicesm'>
                 {
                     comments.map(comment => <SingleComment

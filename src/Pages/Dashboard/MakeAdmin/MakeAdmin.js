@@ -1,36 +1,35 @@
 import { Button, TextField, Alert } from '@mui/material';
 import React, { useState } from 'react';
-import useAuth from '../../../Hooks/useAuth';
+
 
 
 const MakeAdmin = () => {
     const [email, setEmail] = useState('');
     const [success, setSuccess] = useState(false);
-    const { token } = useAuth();
+
 
     const handleOnBlur = e => {
         setEmail(e.target.value);
+
     }
     const handleAdminSubmit = e => {
-        const user = { email };
-        fetch('https://sheltered-ravine-48644.herokuapp.com/users/admin', {
+
+
+        fetch(`https://sheltered-ravine-48644.herokuapp.com/admin/${email}`, {
             method: 'PUT',
             headers: {
-                'authorization': `Bearer ${token}`,
-                'content-type': 'application/json'
+                'content-type': 'aplication/json'
             },
-            body: JSON.stringify(user)
+
         })
             .then(res => res.json())
-            .then(data => {
-                if (data.modifiedCount) {
-                    console.log(data);
-                    setEmail('');
-                    setSuccess(true);
+            .then(result => {
+                if (result.modifiedCount) {
+                    setSuccess(true)
                 }
             })
 
-        e.preventDefault()
+        e.preventDefault();
     }
     return (
         <div>
@@ -47,6 +46,6 @@ const MakeAdmin = () => {
             {success && <Alert severity="success">Made Admin successfully!</Alert>}
         </div>
     );
-};
+}
 
 export default MakeAdmin;
